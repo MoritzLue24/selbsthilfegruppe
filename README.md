@@ -3,7 +3,7 @@ Ein Discord Bot für einen PloudOS Minecraft Server.
 
 ## Config
 Die configdatei befindet sich bei ./config.cfg
-```
+```json
 {
 	"ploudos": {
 		"username": "XXXXXXXXXXXX",
