@@ -10,6 +10,7 @@ class Event(commands.Cog):
 
         with open("config.cfg", "r") as f:
             self.cfg = json.loads(f.read())
+        print(self.cfg["ploudos"])
         self.session = PloudosAPI.login(self.cfg["ploudos"]["username"], self.cfg["ploudos"]["password"])
  
 

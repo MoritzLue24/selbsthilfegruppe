@@ -13,7 +13,6 @@ if __name__ == "__main__":
     intents.message_content = True
     bot = commands.Bot("!", intents=intents)
 
-
     @bot.command()
     @commands.has_permissions(administrator=True)
     async def reload(ctx: commands.Context):
@@ -28,7 +27,6 @@ if __name__ == "__main__":
         )
         await ctx.send(embed=embed)
  
-
     # Load extensions 
     for ext in os.listdir("src/ext"):
         if ext.endswith(".py"):
